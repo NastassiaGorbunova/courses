@@ -1,87 +1,90 @@
-body {
-    margin: 0;
-    padding: 0;
-}
 
-.box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 500px;
-    background: #48d1cc;
-}
+/*!*#panda {*!*/
+/*!*width: 210px;*!*/
+/*!*height: 160px;*!*/
+/*!*background-color: white;*!*/
+/*!*!*background-image: radial-gradient(ellipse at 50% 60%, #333 12px, transparent 12px), radial-gradient(ellipse at 50% 80%, #555 6px, transparent 6px);*!*!*/
+/*!*border-radius: 110px 110px 60px 60px;*!*/
+/*!*border: 5px solid #333;*!*/
+/*!*border-bottom-width: 10px;*!*/
+/*!*box-shadow: inset 10px -10px 0 #eee;*!*/
+/*!*}*!*/
 
-#panda {
-    width: 210px;
-    height: 160px;
-    background-color: #fff;
-    border: 5px solid #000;
-    border-bottom-width: 10px;
-    border-radius: 110px 110px 60px 60px;
-    box-shadow: inset 10px -10px 0 #ebebeb;
-    background-image: radial-gradient(ellipse at 50% 60%, #000 10px, transparent 12px), radial-gradient(ellipse at 50% 80%, #555 8px, transparent 5px);
-}
+/*!*#panda::before, #panda::after {*!*/
+/*!*display: block;*!*/
+/*!*content: '';*!*/
+/*!*position: relative;*!*/
+/*!*width: 70px;*!*/
+/*!*height: 40px;*!*/
+/*!*top: 55px;*!*/
+/*!*background-color: #333;*!*/
+/*!*}*!*/
 
-#panda::before, #panda::after {
-    display: inline-block;
-    content: '';
-    position: relative;
-    width: 70px;
-    height: 40px;
-    background: #000;
-    top: 55px;
-}
+/*!*#panda::before {*!*/
+/*!*left: 29px;*!*/
+/*!*background-image: radial-gradient(circle at 51px 20px, white 3px, transparent 3px), radial-gradient(circle at 46px 20px, #333 7px, transparent 7px), radial-gradient(circle at 45px 20px, white 10px, transparent 10px);*!*/
+/*!*border-radius: 50% 50% 45% 42%;*!*/
+/*!*transform: rotate(-45deg);*!*/
+/*!*box-shadow: 10px -72px 0 -4px #333;*!*/
+/*!*}*!*/
 
-#panda::before {
-    left: 29px;
-    border-radius: 50% 50% 45% 42%;
-    box-shadow: 0 -70px 0 -4px #000;
-    transform: rotate(-45deg);
-    background-image: radial-gradient(circle at 51px 20px, #fff 3px, transparent 3px), radial-gradient(circle at 46px 20px, #333 7px, transparent 7px), radial-gradient(circle at 45px 20px, #fff 10px, transparent 10px);
-}
+/*!*#panda::after {*!*/
+/*!*top: 16px;*!*/
+/*!*left: 111px;*!*/
+/*!*background-image: radial-gradient(circle at 24px 15px, white 3px, transparent 3px), radial-gradient(circle at 24px 20px, #333 7px, transparent 7px), radial-gradient(circle at 25px 20px, white 10px, transparent 10px);*!*/
+/*!*border-radius: 50% 50% 42% 45%;*!*/
+/*!*transform: rotate(45deg);*!*/
+/*!*box-shadow: -10px -72px 0 -4px #333;*!*/
+/*!*}*!*/
 
-#panda::after {
-    left: 41px;
-    border-radius: 50% 50% 42% 45%;
-    box-shadow: 0 -70px 0 -4px #000;
-    transform: rotate(45deg);
-    background-image: radial-gradient(circle at 24px 15px, white 3px, transparent 3px), radial-gradient(circle at 24px 20px, #333 7px, transparent 7px), radial-gradient(circle at 25px 20px, white 10px, transparent 10px);
-}
-
-/*#panda {*/
-/*width: 210px;*/
-/*height: 160px;*/
-/*background-color: white;*/
-/*!*background-image: radial-gradient(ellipse at 50% 60%, #333 12px, transparent 12px), radial-gradient(ellipse at 50% 80%, #555 6px, transparent 6px);*!*/
-/*border-radius: 110px 110px 60px 60px;*/
-/*border: 5px solid #333;*/
-/*border-bottom-width: 10px;*/
-/*box-shadow: inset 10px -10px 0 #eee;*/
+/*body {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
 /*}*/
 
-/*#panda::before, #panda::after {*/
-/*display: block;*/
-/*content: '';*/
-/*position: relative;*/
-/*width: 70px;*/
-/*height: 40px;*/
-/*top: 55px;*/
-/*background-color: #333;*/
+/*.box {*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*min-height: 500px;*/
+    /*background: #48d1cc;*/
+/*}*/
+
+/*#box{*/
+    /*width: 210px;*/
+    /*height: 160px;*/
+    /*background-color: #fff;*/
+    /*border: 5px solid #000;*/
+    /*border-bottom-width: 10px;*/
+    /*border-radius: 110px 110px 60px 60px;*/
+    /*box-shadow: inset 10px -10px 0 #ebebeb;*/
+    /*background-image: radial-gradient(ellipse at 50% 60%, #000 10px, transparent 12px), radial-gradient(ellipse at 50% 80%, #555 8px, transparent 5px);*/
+/*}*/
+
+/*#box::before, #box::after {*/
+    /*display: inline-block;*/
+    /*content: '';*/
+    /*position: relative;*/
+    /*width: 70px;*/
+    /*height: 40px;*/
+    /*background: #000;*/
+    /*top: 55px;*/
 /*}*/
 
 /*#panda::before {*/
-/*left: 29px;*/
-/*background-image: radial-gradient(circle at 51px 20px, white 3px, transparent 3px), radial-gradient(circle at 46px 20px, #333 7px, transparent 7px), radial-gradient(circle at 45px 20px, white 10px, transparent 10px);*/
-/*border-radius: 50% 50% 45% 42%;*/
-/*transform: rotate(-45deg);*/
-/*box-shadow: 10px -72px 0 -4px #333;*/
+    /*left: 29px;*/
+    /*border-radius: 50% 50% 45% 42%;*/
+    /*box-shadow: 0 -70px 0 -4px #000;*/
+    /*transform: rotate(-45deg);*/
+    /*background-image: radial-gradient(circle at 51px 20px, #fff 3px, transparent 3px), radial-gradient(circle at 46px 20px, #333 7px, transparent 7px), radial-gradient(circle at 45px 20px, #fff 10px, transparent 10px);*/
 /*}*/
 
 /*#panda::after {*/
-/*top: 16px;*/
-/*left: 111px;*/
-/*background-image: radial-gradient(circle at 24px 15px, white 3px, transparent 3px), radial-gradient(circle at 24px 20px, #333 7px, transparent 7px), radial-gradient(circle at 25px 20px, white 10px, transparent 10px);*/
-/*border-radius: 50% 50% 42% 45%;*/
-/*transform: rotate(45deg);*/
-/*box-shadow: -10px -72px 0 -4px #333;*/
+    /*left: 41px;*/
+    /*border-radius: 50% 50% 42% 45%;*/
+    /*box-shadow: 0 -70px 0 -4px #000;*/
+    /*transform: rotate(45deg);*/
+    /*background-image: radial-gradient(circle at 24px 15px, white 3px, transparent 3px), radial-gradient(circle at 24px 20px, #333 7px, transparent 7px), radial-gradient(circle at 25px 20px, white 10px, transparent 10px);*/
 /*}*/
+
+
