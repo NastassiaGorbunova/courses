@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Demos for HTML5 tags</h1>
+<h2>Semantic and structural tags</h2>
+<h3>article</h3>
+<article>
+    <h1>Google Chrome</h1>
+    <p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>
+</article>
+<hr>
+<h3>aside</h3>
+<p>My family and I visited The Epcot center this summer.</p>
+
+<aside>
+    <h4>Epcot Center</h4>
+    <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+</aside>
+<hr>
+<h3>bdi</h3>
+<ul>
+    <li>User
+        <bdi>hrefs</bdi>
+        : 60 points
+    </li>
+    <li>User
+        <bdi>jdoe</bdi>
+        : 80 points
+    </li>
+    <li>User
+        <bdi>إيان</bdi>
+        : 90 points
+    </li>
+</ul>
+<hr>
+<h3>details</h3>
+<details>
+    <summary>Copyright 1999-2018.</summary>
+    <p> - by Refsnes Data. All Rights Reserved.</p>
+    <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+</details>
+<hr>
+<h3>dialog</h3>
+<table>
+    <tr>
+        <th>January
+            <dialog open>This is an open dialog window</dialog>
+        </th>
+        <th>February</th>
+        <th>March</th>
+    </tr>
+    <tr>
+        <td>31</td>
+        <td>28</td>
+        <td>31</td>
+    </tr>
+</table>
+<hr>
+<h3>figure & figcaption</h3>
+<figure>
+    <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure>
+<hr>
+<h3>footer</h3>
+<footer>
+    <p>Posted by: Hege Refsnes</p>
+    <p>Contact information: <a href="mailto:someone@example.com">
+        someone@example.com</a>.</p>
+</footer>
+<hr>
+<h3>header</h3>
+<article>
+    <header>
+        <h1>Most important heading here</h1>
+        <h3>Less important heading here</h3>
+        <p>Some additional information here</p>
+    </header>
+    <p>Lorem Ipsum dolor set amet....</p>
+</article>
+<hr>
+<h3>main</h3>
+<main>
+    <h1>Web Browsers</h1>
+    <p>Google Chrome, Firefox, and Internet Explorer are the most used browsers today.</p>
+
+    <article>
+        <h1>Google Chrome</h1>
+        <p>Google Chrome is a free, open-source web browser developed by Google,
+            released in 2008.</p>
+    </article>
+
+    <article>
+        <h1>Internet Explorer</h1>
+        <p>Internet Explorer is a free web browser from Microsoft, released in 1995.</p>
+    </article>
+
+    <article>
+        <h1>Mozilla Firefox</h1>
+        <p>Firefox is a free, open-source web browser from Mozilla, released in 2004.</p>
+    </article>
+</main>
+<hr>
+<h3>mark</h3>
+<p>Do not forget to buy
+    <mark>milk</mark>
+    today.
+</p>
+<hr>
+<h3>meter</h3>
+<meter value="2" min="0" max="10">2 out of 10</meter>
+<br>
+<meter value="0.6">60%</meter>
+<hr>
+<h3>nav</h3>
+<nav>
+    <a href="/html/">HTML</a> |
+    <a href="/css/">CSS</a> |
+    <a href="/js/">JavaScript</a> |
+    <a href="/jquery/">jQuery</a>
+</nav>
+<hr>
+<h3>progress</h3>
+<progress value="22" max="100"></progress>
+<hr>
+<h3>rt, rp & ruby</h3>
+<ruby>
+    漢
+    <rt>
+        <rp>(</rp>
+        ㄏㄢˋ
+        <rp>)</rp>
+    </rt>
+</ruby>
+<hr>
+<h3>section</h3>
+<section>
+    <h4>WWF</h4>
+    <p>The World Wide Fund for Nature (WWF) is....</p>
+</section>
+<hr>
+<h3>summary</h3>
+<details>
+    <summary>Copyright 1999-2014.</summary>
+    <p> - by Refsnes Data. All Rights Reserved.</p>
+    <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+</details>
+<hr>
+<h3>time</h3>
+<p>We open at
+    <time>10:00</time>
+    every morning.
+</p>
+<p>I have a date on
+    <time datetime="2008-02-14 20:00">Valentines day</time>
+    .
+</p>
+<hr>
+<h3>wbr</h3>
+<p>
+    To learn AJAX, you must be familiar with the XML
+    <wbr>
+    Http
+    <wbr>
+    Request Object.
+</p>
+<hr>
+<h2>Forms tags</h2>
+<h3>datalist</h3>
+<form>
+    <input list="browsers">
+
+    <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+    <button type="submit">Send</button>
+</form>
+<hr>
+<h3>output</h3>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+    <input type="range" id="a" value="50">100
+    +<input type="number" id="b" value="50">
+    =
+    <output name="x" for="a b"></output>
+
+    <button type="submit">Send</button>
+</form>
+<hr>
+<h2>Graphics tags</h2>
+<h3>canvas</h3>
+<canvas id="myCanvas"></canvas>
+<script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(0, 0, 80, 80);
+</script>
+<hr>
+<h3>svg</h3>
+<svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"/>
+</svg>
+<hr>
+<h2>Media tags</h2>
+<h3>audio & source</h3>
+<audio controls>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+</audio>
+<hr>
+<h3>video & source</h3>
+<video width="320" height="240" controls>
+    <source src="movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+</video>
+<hr>
+<h3>track</h3>
+<video width="320" height="240" controls>
+    <source src="forrest_gump.mp4" type="video/mp4">
+    <source src="forrest_gump.ogg" type="video/ogg">
+    <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+    <track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+</video>
+
+<hr>
+<h3>embed</h3>
+<embed src="helloworld.swf">
+</body>
+</html>
